@@ -40,11 +40,13 @@ export const NavBar = () => {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-8 w-auto"
-                    src="/assets/default.ico"
-                    alt="GOG Galaxy"
-                  />
+                  <a href="https://www.gog.com/" target="_blank">
+                    <img
+                      className="h-8 w-auto"
+                      src="/assets/default.ico"
+                      alt="GOG Galaxy"
+                    />
+                  </a>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -85,7 +87,7 @@ export const NavBar = () => {
                       <img
                         className="h-8 w-8 rounded-full"
                         src="/assets/avatar.png"
-                        alt=""
+                        alt="avatar"
                       />
                     </Menu.Button>
                   </div>
@@ -98,13 +100,13 @@ export const NavBar = () => {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                   >
-                    <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-gray-500 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <Menu.Item>
                         {({ active }) => (
                           <a
                             className={classNames(
-                              active ? 'bg-gray-100' : '',
-                              'block px-4 py-2 text-sm text-gray-700'
+                              active ? 'text-gray-900' : '',
+                              'block px-4 py-2 text-sm font-bold text-white cursor-pointer'
                             )}
                             onClick={onLogout}
                           >
