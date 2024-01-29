@@ -4,9 +4,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { NavLink, useNavigate } from 'react-router-dom';
 
 const navigation = [
-  { name: 'Major', to: '/major', current: true },
-  { name: 'Minor', to: '/minor', current: false },
-  { name: 'Search', to: '/search', current: false },
+  { name: 'Major', to: '/major' },
+  { name: 'Minor', to: '/minor' },
+  { name: 'Search', to: '/search' },
 ];
 
 function classNames(...classes) {
@@ -52,13 +52,13 @@ export const NavBar = () => {
                       <NavLink
                         key={item.name}
                         to={item.to}
-                        className={classNames(
-                          item.current
-                            ? 'bg-gray-900 text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
+                        className={({ isActive }) =>
+                          `rounded-md px-3 py-2 text-sm font-medium ${
+                            isActive
+                              ? 'bg-gray-900 text-white'
+                              : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                          }`
+                        }
                       >
                         {item.name}
                       </NavLink>

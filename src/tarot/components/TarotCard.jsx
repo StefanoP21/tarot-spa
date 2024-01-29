@@ -11,8 +11,10 @@ export const TarotCard = ({
   const cardImageUrl = `/assets/tarot/${id}.webp`;
 
   return (
-    <div className="max-w-sm px-1 bg-gray-800 border border-gray-700 rounded-sm shadow">
-      <img className="rounded-t-lg" src={cardImageUrl} alt={name} />
+    <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-sm shadow">
+      <Link to={`/card/${id}`}>
+        <img className="rounded-t-sm" src={cardImageUrl} alt={name} />
+      </Link>
 
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
