@@ -11,9 +11,9 @@ export const TarotRoutes = () => {
         <Route path="major" element={<MajorPage />} />
         <Route path="minor" element={<MinorPage />} />
 
-        <Route path="tarot/:id" element={<TarotPage />} />
+        <Route path="card/:id" element={<TarotPage />} />
 
-        <Route path="/" element={<Navigate to="/major" />} />
+        <Route path="/*" element={<Navigate to="/major" />} />
       </Routes>
 
       <Footer />

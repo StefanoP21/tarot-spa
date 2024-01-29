@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
 import { getTarotByType } from '../helpers/getTarotByType';
-import { tarot } from '../data/tarot';
 import { TarotCard } from './TarotCard';
 
 export const TarotList = ({ type }) => {

@@ -3,6 +3,7 @@ export const tarot = [
     id: 'the-fool',
     name: 'The Fool',
     type: 'Major Arcana',
+    path: 'major',
     location: "Located outside V's Apartment.",
     journal:
       "The Fool is everyone - including you and me. Each step he takes on his journey feels like stepping into a brave new world. Ultimately, the journey will change him. But as the card shows, he's a trustworthy lad whose tireless hope drives him toward his goal.",
@@ -13,6 +14,7 @@ export const tarot = [
     id: 'the-magician',
     name: 'The Magician',
     type: 'Major Arcana',
+    path: 'major',
     location:
       "Located near Lizzie's Bar where V meets Evelyn Parker during The Information.",
     journal:
@@ -24,6 +26,7 @@ export const tarot = [
     id: 'the-high-priestess',
     name: 'The High Priestess',
     type: 'Major Arcana',
+    path: 'major',
     location:
       "Located at Takemura's hideout where V meets Hanako Arasaka during Search and Destroy.",
     journal:
@@ -35,6 +38,7 @@ export const tarot = [
     id: 'the-empress',
     name: 'The Empress',
     type: 'Major Arcana',
+    path: 'major',
     location:
       'Located near the Afterlife where V first meets Rogue Amendiares.',
     journal:
@@ -46,6 +50,7 @@ export const tarot = [
     id: 'the-emperor',
     name: 'The Emperor',
     type: 'Major Arcana',
+    path: 'major',
     location:
       "Located near Konpeki Plaza where V and Jackie witness Yorinobu Arasaka's murder of Saburo Arasaka during The Heist.",
     journal:
@@ -57,6 +62,7 @@ export const tarot = [
     id: 'the-hierophant',
     name: 'The Hierophant',
     type: 'Major Arcana',
+    path: 'major',
     location:
       'Located at the Japantown waterfront near where Goro Takemura arranges to meet Sandayu Oda during Down on the Street.',
     journal:
@@ -68,6 +74,7 @@ export const tarot = [
     id: 'the-lovers',
     name: 'The Lovers',
     type: 'Major Arcana',
+    path: 'major',
     location:
       'Located on the back side of the screen at the Silver Pixel Cloud drive-in theater where Johnny and Rogue go on a date during Blistering Love.',
     journal:
@@ -79,6 +86,7 @@ export const tarot = [
     id: 'the-chariot',
     name: 'The Chariot',
     type: 'Major Arcana',
+    path: 'major',
     location:
       "Located near Tom's Diner where V and Takemura meet during Playing for Time to start off Act II.",
     journal:
@@ -90,6 +98,7 @@ export const tarot = [
     id: 'strength',
     name: 'Strength',
     type: 'Major Arcana',
+    path: 'major',
     location:
       'Located in the rail freight yard near where V first meets Panam Palmer during Ghost Town.',
     journal:
@@ -101,6 +110,7 @@ export const tarot = [
     id: 'the-hermit',
     name: 'The Hermit',
     type: 'Major Arcana',
+    path: 'major',
     location:
       'Located near Pacifica Serenity Bible Church where V communes with Alt Cunningham during Transmission.',
     journal:
@@ -112,6 +122,7 @@ export const tarot = [
     id: 'wheel-of-fortune',
     name: 'Wheel of Fortune',
     type: 'Major Arcana',
+    path: 'major',
     location:
       "Located at the Sunset Motel, the site where V and Panam Palmer devise their plan to interdict Anders Hellman's AV during Lightning Breaks, V and Takemura interrogate Anders Hellman during Life During Wartime, and V meets a proxy for Hanako Arasaka during Search and Destroy.",
     journal:
@@ -123,6 +134,7 @@ export const tarot = [
     id: 'justice',
     name: 'Justice',
     type: 'Major Arcana',
+    path: 'major',
     location:
       'Located near the Electric Corporation power plant where V and Judy Álvarez rescue Evelyn Parker during Disasterpiece.',
     journal:
@@ -134,6 +146,7 @@ export const tarot = [
     id: 'the-hanged-man',
     name: 'The Hanged Man',
     type: 'Major Arcana',
+    path: 'major',
     location:
       "Located near Johnny Silverhand's grave in the Northern Oilfields where he and V have a critical conversation during Chippin' In.",
     journal:
@@ -145,6 +158,7 @@ export const tarot = [
     id: 'death',
     name: 'Death',
     type: 'Major Arcana',
+    path: 'major',
     location:
       'Located near Embers where the final act begins with Nocturne Op55N1.',
     journal:
@@ -156,6 +170,7 @@ export const tarot = [
     id: 'temperance',
     name: 'Temperance',
     type: 'Major Arcana',
+    path: 'major',
     location:
       'Located near the Columbarium, which Johnny visits during New Dawn Fades in the Temperance ending.',
     journal:
@@ -167,6 +182,7 @@ export const tarot = [
     id: 'the-devil',
     name: 'The Devil',
     type: 'Major Arcana',
+    path: 'major',
     location:
       "The Devil is obtained after completing the Devil Ending. The actual tarot card can only be seen in-game during Where is My Mind?, when V breaks the Rubik's Cube in half.",
     journal:
@@ -178,6 +194,7 @@ export const tarot = [
     id: 'the-tower',
     name: 'The Tower',
     type: 'Major Arcana',
+    path: 'major',
     location: 'Located at the Arasaka Memorial near Arasaka Tower.',
     journal:
       'The Tower is an omen of radical change, chaos and destruction. The lightning striking The Tower signifies a return to the old order that lies buried under the ruins, and a new order that will rise from it. It is a symbol of tragedy, apocalypse, and self-destruction.',
@@ -188,6 +205,7 @@ export const tarot = [
     id: 'the-star',
     name: 'The Star',
     type: 'Major Arcana',
+    path: 'major',
     location:
       'Located near the Solar Arrays, from where V and the Aldecaldos depart Night City during the eponymous ending.',
     journal:
@@ -199,6 +217,7 @@ export const tarot = [
     id: 'the-moon',
     name: 'The Moon',
     type: 'Major Arcana',
+    path: 'major',
     location:
       'Located near the Arasaka Estate, the site of Last Caress during the Arasaka ending.',
     journal:
@@ -210,6 +229,7 @@ export const tarot = [
     id: 'the-sun',
     name: 'The Sun',
     type: 'Major Arcana',
+    path: 'major',
     location:
       "Located below V's Penthouse, which is featured in Path of Glory during The Sun ending.",
     journal:
@@ -221,6 +241,7 @@ export const tarot = [
     id: 'judgement',
     name: 'Judgement',
     type: 'Major Arcana',
+    path: 'major',
     location:
       'Judgment can be obtained after completing any ending except for "The Devil" and "Path of Least Resistance", but in order to obtain it you need to inspect it in the area where you fight Adam Smasher, before the entrance to Mikoshi.',
     journal:
@@ -232,6 +253,7 @@ export const tarot = [
     id: 'the-world',
     name: 'The World',
     type: 'Major Arcana',
+    path: 'major',
     location:
       "Located on the rooftop near Misty's Esoterica, where V makes the final decision on which ending to take.",
     journal:
@@ -243,16 +265,19 @@ export const tarot = [
     id: 'king-of-cups',
     name: 'King of Cups',
     type: 'Minor Arcana',
+    path: 'minor',
     location:
       "Located near Dogtown's northern entrance where V first meets Song So Mi during Dog Eat Dog.",
     journal:
       "A King of Cups is a creative and emotionally-driven person. They are strong individuals, who realize the importance of feelings. Intuition helps them navigate their lives. When fate is in their favor, compassion guides their actions. When they're at odds with fate, it'd be unwise to trust them.",
-    description: '',
+    description:
+      "King of Cups is a green, cloaked figure with various cabled devices hanging from their clothes. While their hands and arms are not shown, in the background is a glowing five-pointed star befitting this King of Pentacles, possibly also reminiscent of the star of the New United States. Likewise King of Cups' mask has five glowing dots, unlike the other three Kings.",
   },
   {
     id: 'king-of-pentacles',
     name: 'King of Pentacles',
     type: 'Minor Arcana',
+    path: 'minor',
     location:
       'Located on the same level as the Kress Street Hideout where V and Rosalind Myers hide out during Lucretia My Reflection.',
     journal:
@@ -264,20 +289,24 @@ export const tarot = [
     id: 'king-of-wands',
     name: 'King of Wands',
     type: 'Minor Arcana',
+    path: 'minor',
     location:
       'Located near the basketball court at Tranquil Terrace where V first meets Solomon Reed during Lucretia My Reflection.',
     journal:
       'The master of planning and unorthodox ideas. An individual who brings people together and radiates inspiration to those they consider friends. However, their enemies will soon find they are an impulsive, devastating force of nature, capable of breaking oaths and crossing any line, just to see their goals achieved.',
-    description: '',
+    description:
+      "King of Wands is a green, cloaked figure with various cabled devices hanging from their clothes. While their hands and arms are not shown, in the background is a glowing five-pointed star befitting this King of Pentacles, possibly also reminiscent of the star of the New United States. Likewise King of Wands' mask has five glowing dots, unlike the other three Kings.",
   },
   {
     id: 'king-of-swords',
     name: 'King of Swords',
     type: 'Minor Arcana',
+    path: 'minor',
     location:
       'Located on the outside wall of The Moth bar, next to the alternative entrance.',
     journal:
       'Two things matter above all else for a King of Swords: logic and conviction. They represent a person with a precise moral compass, who is known for their caring demeanor. However, enemies beware - the King of Swords is a ruthless opponent, who will not rest until you are punished and left to be torn apart by hounds of fate.',
-    description: '',
+    description:
+      "King of Swords is a green, cloaked figure with various cabled devices hanging from their clothes. While their hands and arms are not shown, in the background is a glowing five-pointed star befitting this King of Pentacles, possibly also reminiscent of the star of the New United States. Likewise King of Swords' mask has five glowing dots, unlike the other three Kings.",
   },
 ];
