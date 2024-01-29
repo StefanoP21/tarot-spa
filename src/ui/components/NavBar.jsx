@@ -43,7 +43,7 @@ export const NavBar = () => {
                   <a href="https://www.gog.com/" target="_blank">
                     <img
                       className="h-8 w-auto"
-                      src="/assets/default.ico"
+                      src="./assets/default.ico"
                       alt="GOG Galaxy"
                     />
                   </a>
