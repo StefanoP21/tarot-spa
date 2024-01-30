@@ -43,7 +43,7 @@ export const NavBar = () => {
                   <a href="https://www.gog.com/" target="_blank">
                     <img
                       className="h-8 w-auto"
-                      src="/public/assets/default.ico"
+                      src="/assets/default.ico"
                       alt="GOG Galaxy"
                     />
                   </a>
@@ -86,7 +86,7 @@ export const NavBar = () => {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="/public/assets/avatar.png"
+                        src="/assets/avatar.png"
                         alt="avatar"
                       />
                     </Menu.Button>
