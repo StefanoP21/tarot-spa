@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 export const TarotCard = ({ id, name, type }) => {
-  const cardImageUrl = `../../assets/tarot/${id}.webp`;
+  const cardImageUrl = `/public/assets/tarot/${id}.webp`;
 
   return (
     <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-sm shadow">
