@@ -46,13 +46,13 @@ export const TarotPage = () => {
             </li>
 
             <li className="text-sm">
-              <a
-                href={tarot.id}
+              <Link
+                to={`/card/${tarot.id}`}
                 aria-current="page"
                 className="font-medium text-gray-400 hover:text-gray-200"
               >
                 {tarot.name}
-              </a>
+              </Link>
             </li>
           </ol>
         </nav>
