@@ -1,8 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { LoginPage } from '../auth/pages/LoginPage';
 import { TarotRoutes } from '../tarot/routes/TarotRoutes';
-import { PrivateRoute } from './PrivateRoute';
-import { PublicRoute } from './PublicRoute';
+import { PrivateRoute, PublicRoute } from './';
 
 export const AppRouter = () => {
   return (
