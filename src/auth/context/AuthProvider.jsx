@@ -5,7 +5,7 @@ import { authReducer } from './authReducer';
 import { types } from '../types/types';
 
 const init = () => {
-  const user = JSON.parse(localStorage.getItem('user')) || null;
+  const user = JSON.parse(localStorage.getItem('user'));
 
   return {
     logged: !!user,
@@ -16,8 +16,8 @@ const init = () => {
 export const AuthProvider = ({ children }) => {
   const [authState, dispatch] = useReducer(authReducer, {}, init);
 
-  const login = (name = '') => {
-    const user = { id: 1, name: 'Stefano', email: 'stefanop21@outlook.es' };
+  const login = (name = '', email = '', password = '') => {
+    const user = { id: 1, name, email, password };
 
     const action = {
       type: types.login,

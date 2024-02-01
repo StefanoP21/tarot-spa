@@ -1,11 +1,23 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context/AuthContext';
 
 export const LoginPage = () => {
+  const { login } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const onLogin = () => {
-    navigate('/major', { replace: true });
+    const lastPath = localStorage.getItem('lastPath') || '/';
+
+    login('Stefano', 'stefanop21@outlook.es', '12345678');
+
+    navigate(lastPath, { replace: true });
+  };
+
+  const onLoginSubmit = (event) => {
+    event.preventDefault();
+
+    onLogin();
   };
 
   return (
@@ -22,7 +34,7 @@ export const LoginPage = () => {
       </div>
 
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form className="space-y-6" action="#" method="POST">
+        <form className="space-y-6" onSubmit={onLoginSubmit}>
           <div>
             <label
               htmlFor="email"
@@ -68,10 +80,7 @@ export const LoginPage = () => {
           </div>
 
           <div>
-            <button
-              className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              onClick={onLogin}
-            >
+            <button className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
               Sign in
             </button>
           </div>

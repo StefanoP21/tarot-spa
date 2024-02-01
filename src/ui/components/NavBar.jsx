@@ -1,7 +1,8 @@
-import { Fragment } from 'react';
+import { Fragment, useContext } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../auth/context';
 
 const navigation = [
   { name: 'Major', to: '/major' },
@@ -14,9 +15,12 @@ function classNames(...classes) {
 }
 
 export const NavBar = () => {
+  const { user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const onLogout = () => {
+    logout();
+
     navigate('/login', { replace: true });
   };
 
@@ -69,6 +73,11 @@ export const NavBar = () => {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                {/* User information */}
+                <p className="text-white font-bold text-md pr-2">
+                  {user?.name}
+                </p>
+
                 <button
                   type="button"
                   className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -105,7 +114,7 @@ export const NavBar = () => {
                         {({ active }) => (
                           <a
                             className={classNames(
-                              active ? 'text-gray-900' : '',
+                              active ? 'hover:text-gray-900' : '',
                               'block px-4 py-2 text-sm font-bold text-white cursor-pointer'
                             )}
                             onClick={onLogout}
@@ -124,20 +133,19 @@ export const NavBar = () => {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <NavLink
                   key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
+                  to={item.to}
+                  className={({ isActive }) =>
+                    `rounded-md px-3 py-2 text-sm font-medium ${
+                      isActive
+                        ? 'bg-gray-900 text-white'
+                        : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                    }`
+                  }
                 >
                   {item.name}
-                </Disclosure.Button>
+                </NavLink>
               ))}
             </div>
           </Disclosure.Panel>
