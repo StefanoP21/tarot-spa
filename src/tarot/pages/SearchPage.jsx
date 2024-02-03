@@ -3,8 +3,7 @@ import queryString from 'query-string';
 
 import { getTarotByName } from '../helpers/getTarotByName';
 import { useForm } from '../../hooks/useForm';
-import { TarotList } from '../components/TarotList';
-import { TarotCard } from '../components/TarotCard';
+import { TarotCard } from '../components';
 
 export const SearchPage = () => {
   const navigate = useNavigate();
