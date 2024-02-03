@@ -1,15 +1,17 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 
 export const LoginPage = () => {
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
+  const [email, setEmail] = useState('stefanop21@outlook.es');
+  const [password, setPassword] = useState('12345678');
 
   const onLogin = () => {
     const lastPath = localStorage.getItem('lastPath') || '/';
 
-    login('Stefano', 'stefanop21@outlook.es', '12345678');
+    login('Stefano', email, password);
 
     navigate(lastPath, { replace: true });
   };
@@ -21,14 +23,14 @@ export const LoginPage = () => {
   };
 
   return (
-    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+    <div className="flex flex-1 flex-col justify-center px-6 py-12 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
         <img
           className="mx-auto h-10 w-auto"
           src="/assets/default.ico"
           alt="Your Company"
         />
-        <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+        <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
           Sign in to your account
         </h2>
       </div>
@@ -38,7 +40,7 @@ export const LoginPage = () => {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium leading-6 text-gray-900"
+              className="block text-sm font-medium leading-6 text-gray-200"
             >
               Email address
             </label>
@@ -46,12 +48,12 @@ export const LoginPage = () => {
               <input
                 id="email"
                 name="email"
-                value="stefano@outlook.es"
+                value={email}
                 type="email"
                 autoComplete="email"
                 required
                 readOnly
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -60,7 +62,7 @@ export const LoginPage = () => {
             <div className="flex items-center justify-between">
               <label
                 htmlFor="password"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block text-sm font-medium leading-6 text-gray-200"
               >
                 Password
               </label>
@@ -69,12 +71,12 @@ export const LoginPage = () => {
               <input
                 id="password"
                 name="password"
-                value="12345678"
+                value={password}
                 type="password"
                 autoComplete="current-password"
                 required
                 readOnly
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
