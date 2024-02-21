@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <SearchPage /> debe de mostrarse correctamente con valores por defecto 1`] = `
+<div>
+  <div
+    class="bg-gray-700"
+  >
+    <div
+      class="mx-auto max-w-xl px-4 py-10 sm:px-6 sm:py-10 lg:max-w-7xl lg:px-8"
+    >
+      <form>
+        <div
+          class="sm:col-span-4"
+        >
+          <label
+            class="block text-sm font-bold leading-6 text-white"
+            for="searchText"
+          >
+            Card Name
+          </label>
+          <div
+            class="mt-2"
+          >
+            <div
+              class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-purple-600 sm:max-w-md"
+            >
+              <input
+                class="block flex-1 border-0 bg-transparent py-1.5 pl-2 text-gray-200 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                id="searchText"
+                name="searchText"
+                placeholder="The Fool"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div>
+            <button
+              class="mt-4 bg-purple-600 border border-transparent rounded-md py-2 px-4 inline-flex justify-center text-sm font-bold text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+              type="submit"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
+      <div
+        class="mt-10"
+      >
+        <div
+          class="bg-purple-900 px-4 py-5 sm:px-6 sm:py-6 sm:rounded-lg sm:shadow-xl"
+        >
+          <h3
+            class="text-xl font-semibold leading-6 text-white"
+          >
+            Search for a Tarot Card
+          </h3>
+          <div
+            class="mt-2 text-md text-gray-100"
+          >
+            <p>
+              Use the search bar above to find a tarot card by name. For example,
+ try searching for "The Fool" or "The Magician".
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mt-10 mb-20 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
+      />
+    </div>
+  </div>
+</div>
+`;
