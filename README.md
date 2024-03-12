@@ -1,8 +1,35 @@
-# React + Vite
+# Tarot Cards
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Imagen de previsualización](public/assets/tarotspa.png)
 
-Currently, two official plugins are available:
+Aplicación web para leer cartas de tarot con temática CyberPunk 2077. La aplicación cuenta con un sistema de lectura y búsqueda de cartas y un sistema de interpretación de resultados. Además, cuenta con un sistema de protección de rutas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalación
+
+Instala las dependencias del proyecto con:
+
+```bash
+yarn add
+```
+
+## Ejecución
+
+Para ejecutar el proyecto en modo de desarrollo, usa:
+
+```bash
+yarn dev
+```
+
+## Pruebas
+
+Para ejecutar las pruebas, usa:
+
+```bash
+yarn test
+```
+
+## Tecnologías
+
+- React
+- React Router
+- Tailwind CSS
