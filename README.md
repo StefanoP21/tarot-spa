@@ -30,7 +30,7 @@ git clone https://github.com/StefanoP21/tarot-spa.git
 ```bash
 npm install
 #or
-yarn add
+yarn 
 ```
 
 ## Ejecución en modo de desarrollo
